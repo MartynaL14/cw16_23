@@ -1,0 +1,20 @@
+/* Arkusz styli dla zadania 20 */
+
+p {
+    color: red;
+    font-size: 22pt;
+}
+
+/* Styl dla akapitu z ID #gruby_morawski */
+#gruby_morawski {
+    color: green;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+/* Styl dla identyfikatora #dlawsyskich_morawski */
+#dlawszystkich_morawski {
+    color: yellow;
+    font-size: 10pt;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Morawski Dominik 16.03.25 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budowa selektora w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            background: #f4f4f4;
+            border: 1px solid #999;
+            padding: 10px;
+            resize: none;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Budowa selektora w CSS</h1>
+
+    <h2>1. Główne części selektora</h2>
+    <p>Każdy selektor składa się z dwóch podstawowych elementów:</p>
+    <ul>
+        <li><strong>Selektor</strong> – określa, do jakiego elementu HTML będą stosowane style (np. <code>h1</code>).</li>
+        <li><strong>Deklaracja</strong> – zawiera zestaw właściwości i wartości, np. <code>color: blue;</code>.</li>
+    </ul>
+
+    <h2>2. Znaczenie nawiasów klamrowych <code>{ ... }</code></h2>
+    <p>Nawiasy klamrowe otaczają zbiór deklaracji przypisanych do danego selektora. Każda deklaracja definiuje konkretny wygląd elementu.</p>
+
+    <h2>3. Opis cech w CSS</h2>
+    <p>Cechy w CSS to właściwości stylu, które określają wygląd elementów. Przykłady:</p>
+    <ul>
+        <li><code>color</code> – kolor tekstu</li>
+        <li><code>font-size</code> – rozmiar czcionki</li>
+        <li><code>margin</code> – marginesy wokół elementu</li>
+    </ul>
+
+    <h2>4. Opis wartości w CSS</h2>
+    <p>Wartości w CSS są przypisane do cech i definiują konkretny wygląd elementu. Przykłady:</p>
+    <ul>
+        <li>Dla koloru: <code>red</code>, <code>#FFFF00</code></li>
+        <li>Dla rozmiaru: <code>12px</code>, <code>1.5em</code></li>
+    </ul>
+
+    <h2>5. Kiedy stosować średnik <code>;</code>?</h2>
+    <p>Średnik oddziela poszczególne deklaracje wewnątrz selektora:</p>
+    <textarea readonly>
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+    </textarea>
+    <p>Ostatnia deklaracja może, ale nie musi mieć średnika. Jednak jego stosowanie na końcu zwiększa przejrzystość kodu.</p>
+
+</body>
+</html>

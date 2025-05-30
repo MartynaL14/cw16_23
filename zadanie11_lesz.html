@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Morawski Dominik 19.03.25 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektory w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        textarea {
+            width: 40%;
+            height: 175px;
+            font-family: monospace;
+            background: #f4f4f4;
+            border: 1px solid #999;
+            padding: 5px;
+            resize: none;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><u>Rodzaje selektorów w CSS</u></h2>
+
+    <ol>
+        <li>
+            <h3>Oparte na atrybutach</h3>
+            <ul>
+                <li>Elementy zawierające atrybut: np. <code>input[type="text"]</code></li>
+                <li>Elementy o określonej wartości atrybutu: np. <code>a[target="_blank"]</code></li>
+            </ul>
+        </li>
+        <li>
+            <h3>Łączone selektory</h3>
+            <ul>
+                <li>Wybór elementów wewnątrz innych: np. <code>div p</code></li>
+                <li>Bezpośrednie dzieci danego elementu: np. <code>ul > li</code></li>
+                <li>Elementy sąsiadujące: np. <code>h1 + p</code></li>
+            </ul>
+        </li>
+        <li>
+            <h3>Podstawowe selektory</h3>
+            <ul>
+                <li>Typowe dla tagów HTML: np. <code>p</code>, <code>h1</code></li>
+                <li>Selektory klasowe: np. <code>.nazwa-klasy</code></li>
+                <li>Identyfikatory: np. <code>#unikalne-id</code></li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>

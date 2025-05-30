@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 21 - mora</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Identyfikatory — ID</h1>
+  <table>
+    <tr>
+      <th>Pojęcie</th>
+      <th>Opis</th>
+    </tr>
+    <tr>
+      <td>Co znaczy skrót ID?</td>
+      <td>ID to skrót od „identyfikator” – unikalna nazwa przypisana do elementu HTML.</td>
+    </tr>
+    <tr>
+      <td>Jaki jest cel stosowania ID?</td>
+      <td>Stosujemy ID, aby jednoznacznie zidentyfikować element na stronie i przypisać mu indywidualny styl CSS.</td>
+    </tr>
+    <tr>
+      <td>Jakie jest znaczenie znaku #?</td>
+      <td>Znak # w CSS służy do odwoływania się do elementu z określonym ID.</td>
+    </tr>
+    <tr>
+      <td>Jak następuje wywołanie ID (wraz z wytłumaczeniem)?</td>
+      <td>Wywołanie ID w CSS: np. #naglowek { color: red; } – selektor # odnosi się do elementu z id="naglowek"</td>
+    </tr>
+    <tr>
+      <td>Uwagi na temat stosowania ID</td>
+      <td>
+        <ul>
+          <li>ID musi być unikalne na stronie.</li>
+          <li>W przypadku wielu podobnych elementów lepiej użyć klasy class.</li>
+          <li>Użycie wielu elementów z tym samym ID nie jest błędem krytycznym, ale niezalecane.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Przykład użycia ID</h2>
+  <style>
+    p {
+      color: green;
+      font-size: 14pt;
+    }
+    p#pochyly {
+      font-style: italic;
+      font-size: 20pt;
+    }
+  </style>
+
+  <p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+  <p id="pochyly">Blok tekstu o kolorze zielonym i czcionce 20pt</p>
+  <p>Blok tekstu o kolorze zielonym i czcionce 14pt</p>
+
+  <!-- Dominik Morawski -->
+</body>
+</html>
